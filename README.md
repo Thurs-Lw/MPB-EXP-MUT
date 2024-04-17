@@ -2,6 +2,8 @@
 
 MPB-EXP and MPB-MUT models are two key models developed in this study, which use deep learning techniques to predict and optimize the soluble expression levels of proteins.
 
+![MPB-EXP-MUT]("./Asset/Figure 1.jpg)
+
 ### MPB-EXP Model
 
 The MPB-EXP model is a classification model based on amino acid sequences, used to predict the soluble expression levels of proteins in different host organisms. This model employs a transfer learning approach, initially constructing a pre-trained model (MP-TRANS) containing multiple Transformer layers, which can capture complex features of protein sequences. It is then fine-tuned using specific protein expression level datasets to create 88 MPB-EXP models for 88 different species. Each model can predict the expression levels of proteins within its corresponding species, helping to identify key sequence features that influence protein expression by comparing amino acid sequences with expression data.
