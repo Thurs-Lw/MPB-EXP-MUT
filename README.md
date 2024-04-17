@@ -2,7 +2,7 @@
 
 MPB-EXP and MPB-MUT models are two key models developed in this study, which use deep learning techniques to predict and optimize the soluble expression levels of proteins.
 
-![MPB-EXP-MUT]("./Asset/Figure 1.jpg)
+![MPB-EXP-MUT](./Asset/Figure 1.jpg)
 
 ### MPB-EXP Model
 
