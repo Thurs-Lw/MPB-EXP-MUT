@@ -55,31 +55,112 @@ pip install scikit-learn tqdm pandas matplotlib
 
 #### Model and data download
 
-We have uploaded all models and data to Zenodo. First, you need to download the relevant weights for our MP-TRANS pretrained model:
+We have uploaded all models and data to Zenodo. 
 
-| Model    | link |
-| -------- | ---- |
-| MP-TRANS |      |
+1. **Download the relevant weights for our MP-TRANS pretrained model for mutant generation:**
 
-Next, you need to download our MPB-EXP models for 88 species. Due to Zenodo's storage limits, we have split them into 9 parts, with each link containing a different subset of species. Please refer to the details on Zenodo for specifics about which species are included:
+| Model    | link                                               |
+| -------- | -------------------------------------------------- |
+| MP-TRANS | [Zenodo]([https://doi.org/10.5281/zenodo.11191176) |
 
-| Model           | link |
-| --------------- | ---- |
-| MPB_EXP_model_0 |      |
-| MPB_EXP_model_1 |      |
-| MPB_EXP_model_2 |      |
-| MPB_EXP_model_3 |      |
-| MPB_EXP_model_4 |      |
-| MPB_EXP_model_5 |      |
-| MPB_EXP_model_6 |      |
-| MPB_EXP_model_7 |      |
-| MPB_EXP_model_8 |      |
+2. **Download our MPB-EXP models of 88 species for expression level prediction:**
 
-In addition, we also provide the original training data for MPB-EXP:
+| Archive | Model                                         | ID      | link                                               |
+| ------- | --------------------------------------------- | ------- | -------------------------------------------------- |
+| 0       | *Natrialba magadii*                           | 547559  | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Halobacterium salinarum*                     | 64091   | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Caldithrix abyssi*                           | 880073  | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Leptospira interrogans*                      | 189518  | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Ruegeria pomeroyi*                           | 246200  | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Pseudomonas aeruginosa*                      | 208964  | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Pseudomonas putida*                          | 160488  | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Salmonella enterica*                         | 99287   | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Escherichia coli*                            | 511145  | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 0       | *Klebsiella pneumoniae*                       | 272620  | [Zenodo]([https://doi.org/10.5281/zenodo.10985361) |
+| 1       | *Raoultella ornithinolytica*                  | 1286170 | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Odoribacter splanchnicus*                    | 709991  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Segatella copri*                             | 537011  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Parabacteroides merdae*                      | 411477  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Parabacteroides distasonis*                  | 435591  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Phocaeicola vulgatus*                        | 435590  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Bacteroides thetaiotaomicron*                | 226186  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Bacteroides fragilis*                        | 272559  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Bacteroides uniformis*                       | 411479  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 1       | *Microcystis aeruginosa*                      | 449447  | [Zenodo]([https://doi.org/10.5281/zenodo.10985419) |
+| 2       | *Synechococcus elongatus*                     | 1140    | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Streptomyces coelicolor*                     | 100226  | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Mycobacterium tuberculosis*                  | 83332   | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Mycolicibacterium smegmatis*                 | 246196  | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Staphylococcus aureus*                       | 1280    | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Bacillus subtilis*                           | 224308  | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Clostridium saccharolyticum*                 | 610130  | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Enterocloster bolteae*                       | 411902  | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Ruminococcus gnavus*                         | 411470  | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 2       | *Guillardia theta*                            | 55529   | [Zenodo]([https://doi.org/10.5281/zenodo.10985453) |
+| 3       | Dictyostelium discoideum                      | 44689   | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Emiliania huxleyi                             | 2903    | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Trypanosoma brucei                            | 5691    | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Trypanosoma cruzi strain CL Brener            | 353153  | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Phaeodactylum tricornutum                     | 2850    | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Thalassiosira pseudonana                      | 35128   | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Toxoplasma gondi                              | 5811    | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Plasmodium falciparum                         | 5833    | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Plasmodium yoelii yoelii                      | 73239   | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 3       | Chlamydomonas reinhardtii                     | 3055    | [Zenodo]([https://doi.org/10.5281/zenodo.10985479) |
+| 4       | Physcomitrium patens                          | 3218    | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Zea mays                                      | 4577    | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Oryza sativa Japonica Group                   | 39947   | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Triticum aestivum                             | 4565    | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Hordeum vulgare                               | 4513    | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Nicotiana tabacum                             | 4097    | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Solanum lycopersicum                          | 4081    | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Solanum tuberosum                             | 4113    | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Vitis vinifera                                | 29760   | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 4       | Medicago truncatula                           | 3880    | [Zenodo]([https://doi.org/10.5281/zenodo.10985483) |
+| 5       | Glycine max                                   | 3847    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Citrus sinensis                               | 2711    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Gossypium hirsutum                            | 3635    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Arabidopsis thaliana                          | 3702    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Brassica napus                                | 3708    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Cryptococcus neoformans var. neoformans JEC21 | 214684  | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Schizosaccharomyces pombe                     | 4896    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Fusarium oxysporum                            | 5507    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Neurospora crassa                             | 5141    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 5       | Candida albicans                              | 5476    | [Zenodo]([https://doi.org/10.5281/zenodo.10985489) |
+| 6       | Kluyveromyces lactis NRRL Y-1140              | 284590  | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Saccharomyces cerevisiae                      | 4932    | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Caenorhabditis elegans                        | 6239    | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Ixodes scapularis                             | 6945    | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Apis mellifera                                | 7460    | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Drosophila melanogaster                       | 7227    | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Anopheles gambiae                             | 7165    | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Aedes aegypti                                 | 7159    | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Danio rerio                                   | 7955    | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 6       | Oryzias melastigma                            | 30732   | [Zenodo]([https://doi.org/10.5281/zenodo.10985495) |
+| 7       | Salmo salar                                   | 8030    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Oncorhynchus mykiss                           | 8022    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Xenopus tropicalis                            | 8364    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Xenopus laevis                                | 8355    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Gallus gallus                                 | 9031    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Canis lupus                                   | 9612    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Canis lupus(familiaris)                       | 9615    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Equus caballus                                | 9796    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Sus scrofa                                    | 9823    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 7       | Bos taurus                                    | 9913    | [Zenodo]([https://doi.org/10.5281/zenodo.10985513) |
+| 8       | Bubalus bubalis                               | 89462   | [Zenodo]([https://doi.org/10.5281/zenodo.10985522) |
+| 8       | Macaca mulatta                                | 9544    | [Zenodo]([https://doi.org/10.5281/zenodo.10985522) |
+| 8       | Pan troglodytes                               | 9598    | [Zenodo]([https://doi.org/10.5281/zenodo.10985522) |
+| 8       | Homo sapiens                                  | 9606    | [Zenodo]([https://doi.org/10.5281/zenodo.10985522) |
+| 8       | Oryctolagus cuniculus                         | 9986    | [Zenodo]([https://doi.org/10.5281/zenodo.10985522) |
+| 8       | Cricetulus griseus                            | 10029   | [Zenodo]([https://doi.org/10.5281/zenodo.10985522) |
+| 8       | Mus musculus                                  | 10090   | [Zenodo]([https://doi.org/10.5281/zenodo.10985522) |
+| 8       | Rattus norvegicus                             | 10116   | [Zenodo]([https://doi.org/10.5281/zenodo.10985522) |
 
-| Dataset                                                  | link |
-| -------------------------------------------------------- | ---- |
-| Protein expression level dataset (MPB-EXP model dataset) |      |
+3. In addition, we also provide the original training data for MPB-EXP:
+
+| Dataset                                                  | link                                               |
+| -------------------------------------------------------- | -------------------------------------------------- |
+| Protein expression level dataset (MPB-EXP model dataset) | [Zenodo]([https://doi.org/10.5281/zenodo.10984375) |
 
 
 
@@ -124,6 +205,7 @@ You can run this script with the following code, and once it completes, you will
 ```shell
 python mut_generation_flow.py -E [HMMER dataset path] -D [GPU/NPU device ID] -V [Vocab file] -F [Fasta file of your protein] -P [MP-Trans file] -X [MPB-EXP path] -O [Output path] -M [TaxonID]
 ```
+
 
 ### Related article for this code:
 
