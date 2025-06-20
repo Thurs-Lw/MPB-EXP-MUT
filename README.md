@@ -208,4 +208,4 @@ python mut_generation_flow.py -E [HMMER dataset path] -D [GPU/NPU device ID] -V 
 
 
 ### Related article for this code:
-
+Liu T, Zhang Y, Li Y, et al. [Effective Gene Expression Prediction and Optimization from Protein Sequences](https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202407664). Advanced Science, 2025: 2407664.
